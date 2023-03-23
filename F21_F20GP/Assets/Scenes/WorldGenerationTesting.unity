@@ -152,10 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54fabe380ae6d2f40846401e31e414e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 200
-  minRoomSize: 15
-  maxRoomSize: 30
-  NumberOfRooms: 14
+  size: 100
+  minRoomSize: 10
+  maxRoomSize: 15
+  NumberOfRooms: 5
 --- !u!4 &161846646
 Transform:
   m_ObjectHideFlags: 0
