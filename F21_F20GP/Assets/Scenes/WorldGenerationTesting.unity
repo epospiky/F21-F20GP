@@ -368,12 +368,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.87, z: 1}
   m_Center: {x: 0, y: 0.43, z: 0}
---- !u!95 &946248796 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 95605706055870404, guid: b6bc442002739164d915094800ad8fe1, type: 3}
-  m_PrefabInstance: {fileID: 373423367}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &946248798
+--- !u!114 &946248796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,8 +383,13 @@ MonoBehaviour:
   Player: {fileID: 2137087879}
   MoveSpeed: 4
   MaxDist: 10
-  MinDist: 1
-  anim: {fileID: 946248796}
+  MinDist: 2
+  anim: {fileID: 946248797}
+--- !u!95 &946248797 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95605706055870404, guid: b6bc442002739164d915094800ad8fe1, type: 3}
+  m_PrefabInstance: {fileID: 373423367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1060886620
 GameObject:
   m_ObjectHideFlags: 0
