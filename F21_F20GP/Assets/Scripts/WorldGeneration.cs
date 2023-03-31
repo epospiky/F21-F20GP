@@ -11,7 +11,10 @@ public class WorldGeneration : MonoBehaviour
     public int maxRoomSize = 20;
     public int NumberOfRooms = 5;
 
+    public int numberOfEnemies = 5;
+
     public List<(int,int)> points = new List<(int, int)>();
+    public List<Vector3> validSpawns = new List<Vector3>();
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +26,32 @@ public class WorldGeneration : MonoBehaviour
         world = createHallways(world);
         world = findWalls(world);
         printArray(world);
-        placeWalls(world);  
-         
+        placeWalls(world);
+
+
+        placePlayer(world); 
+    }
+
+    private void findValidSpawns(int[,] world)
+    {
+        for (int y = 1; y < (size - 1); y++)
+        {
+            for (int z = 1; z < (size - 1); z++)
+            {
+                if (world[y,z] > 0)
+                {
+                    validSpawns.Add(new Vector3(y, 1.0f, z));
+                }
+            }
+        }
+    }
+
+    private void placePlayer(int[,] world)
+    {
+        //create list of valid spawns
+        //pick one for player
+        //remove any points in that room as valid spawns
+        //rest of valid spawns are baddie spawns    
     }
 
     // Update is called once per frame
