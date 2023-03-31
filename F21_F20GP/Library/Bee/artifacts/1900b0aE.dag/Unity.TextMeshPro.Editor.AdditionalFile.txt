@@ -1,9 +1,1 @@
-<<<<<<< Updated upstream
 C:\Users\ducky\Documents\GitHub\F21-F20GP\F21_F20GP
-=======
-<<<<<<< HEAD
-C:\Users\ducky\Documents\GitHub\F21-F20GP\F21_F20GP
-=======
-D:\enam games\Shen's Project\F21-F20GP\F21_F20GP
->>>>>>> 417230e3daa80419d583a3a5b7d6f488c885ab4a
->>>>>>> Stashed changes
