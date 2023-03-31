@@ -14,6 +14,8 @@ public class WorldGeneration : MonoBehaviour
     public int numberOfSpawn1 = 5;
     public GameObject spawn1;
 
+    public GameObject Player;
+
     public List<(int,int)> points = new List<(int, int)>();
     public List<Vector3> validSpawns = new List<Vector3>();
 
@@ -32,7 +34,11 @@ public class WorldGeneration : MonoBehaviour
 
         findValidSpawns(world);
         spawnEnemies();
-         
+
+
+        int spawnPoint = Random.Range(0, validSpawns.Count - 1);
+        Instantiate(Player, validSpawns[spawnPoint], Quaternion.identity);
+        validSpawns.RemoveAt(spawnPoint);
     }
 
     private void spawnEnemies()
