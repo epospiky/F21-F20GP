@@ -11,7 +11,12 @@ public class WorldGeneration : MonoBehaviour
     public int maxRoomSize = 20;
     public int NumberOfRooms = 5;
 
+    public int numberOfSpawn1 = 5;
+    public GameObject spawn1;
+
     public List<(int,int)> points = new List<(int, int)>();
+    public List<Vector3> validSpawns = new List<Vector3>();
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +28,35 @@ public class WorldGeneration : MonoBehaviour
         world = createHallways(world);
         world = findWalls(world);
         printArray(world);
-        placeWalls(world);  
+        placeWalls(world);
+
+        findValidSpawns(world);
+        spawnEnemies();
          
+    }
+
+    private void spawnEnemies()
+    {
+        for(int x = 0; x < numberOfSpawn1; x++)
+        {
+            int spawnPoint = Random.Range(0, validSpawns.Count-1);
+            Instantiate(spawn1, validSpawns[spawnPoint], Quaternion.identity);
+            validSpawns.RemoveAt(spawnPoint);
+        }
+    }
+
+    private void findValidSpawns(int[,] world)
+    {
+        for (int y = 1; y < (size - 1); y++)
+        {
+            for (int z = 1; z < (size - 1); z++)
+            {
+                if (world[y,z] > 0)
+                {
+                    validSpawns.Add(new Vector3(y, 1.0f, z));
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -32,6 +64,8 @@ public class WorldGeneration : MonoBehaviour
     {
         
     }
+
+    
 
     public int[,] createArray(int sizeOfArray)
     {
@@ -214,6 +248,7 @@ public class WorldGeneration : MonoBehaviour
                     GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                     cube.transform.localScale = new Vector3(1, 1, 1);
                     cube.transform.position = new Vector3(y, 1, z);
+                    cube.AddComponent<BoxCollider>();
                 }
             }
         }
