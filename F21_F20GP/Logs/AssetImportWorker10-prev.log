@@ -1,0 +1,324 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 32501 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker10
+-projectPath
+C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP
+-logFile
+Logs/AssetImportWorker10.log
+-srvPort
+55666
+Successfully changed project path to: C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP
+C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [32812] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2021841708 [EditorId] 2021841708 [Version] 1048832 [Id] WindowsEditor(7,ERNEST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [32812] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2021841708 [EditorId] 2021841708 [Version] 1048832 [Id] WindowsEditor(7,ERNEST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 469.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti with Max-Q Design (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     4020 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011414 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 167.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.720 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1721ms)
+		BeginReloadAssembly (303ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (4ms)
+		EndReloadAssembly (1031ms)
+			LoadAssemblies (291ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (241ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (601ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (168ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (314ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008364 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Admin\Desktop\Computer Games Programming\F21F20GP_CW2\F21-F20GP\F21_F20GP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Admin\Desktop\Computer Games Programming\F21F20GP_CW2\F21-F20GP\F21_F20GP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.220 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2222ms)
+		BeginReloadAssembly (240ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1758ms)
+			LoadAssemblies (170ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (573ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (810ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (543ms)
+				ProcessInitializeOnLoadMethodAttributes (80ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3059 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (113.9 KB). Loaded Objects now: 3523.
+Memory consumption went from 109.8 MB to 109.7 MB.
+Total: 11.715900 ms (FindLiveObjects: 0.575600 ms CreateObjectMapping: 0.498700 ms MarkObjects: 10.383200 ms  DeleteObjects: 0.255500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 528555.821516 seconds.
+  path: Assets/Pro Rifle Pack/Ch15_nonPBR.fbx
+  artifactKey: Guid(81fea06e2b0b8ae4c8ed99cdbe904c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/Ch15_nonPBR.fbx using Guid(81fea06e2b0b8ae4c8ed99cdbe904c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9188afd3942407e082fefe07a0cd296') in 0.230439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.322413 seconds.
+  path: Assets/Pro Rifle Pack/walk right.fbx
+  artifactKey: Guid(39a52917a4c068a4aacd835dfcd6de05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk right.fbx using Guid(39a52917a4c068a4aacd835dfcd6de05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a73b52ab959e705d76723c4afc87eba') in 0.011886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.619086 seconds.
+  path: Assets/Pro Rifle Pack/turn 90 right.fbx
+  artifactKey: Guid(01f749b13cf2ca74890c23b9e951ce37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/turn 90 right.fbx using Guid(01f749b13cf2ca74890c23b9e951ce37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe92ada906807ab62949057d0e9bf1d') in 0.004868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.115415 seconds.
+  path: Assets/Pro Rifle Pack/sprint backward left.fbx
+  artifactKey: Guid(2d6faad7eff6107458d730e0e6f994a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/sprint backward left.fbx using Guid(2d6faad7eff6107458d730e0e6f994a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a29a4b9112b8c780762688079647595') in 0.005476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001666 seconds.
+  path: Assets/Pro Rifle Pack/sprint forward right.fbx
+  artifactKey: Guid(d32f392c3c5cc8b4a819b4e20af031f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/sprint forward right.fbx using Guid(d32f392c3c5cc8b4a819b4e20af031f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c7c3ad116c3a8e92b41beef4bf583c') in 0.006528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Pro Rifle Pack/sprint forward.fbx
+  artifactKey: Guid(fe299eda29ac8564e8f85aa10354d8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/sprint forward.fbx using Guid(fe299eda29ac8564e8f85aa10354d8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342703294f1a3548005176185a651107') in 0.005768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Pro Rifle Pack/walk backward right.fbx
+  artifactKey: Guid(320a2bab4d194d84195f1d0214aa4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk backward right.fbx using Guid(320a2bab4d194d84195f1d0214aa4e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2a54076f9417d4e14a84723289cac0') in 0.006938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Pro Rifle Pack/walk backward.fbx
+  artifactKey: Guid(ba50ca3d01edb684681a29a0adc67476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk backward.fbx using Guid(ba50ca3d01edb684681a29a0adc67476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8ca959e354af3721722fcecf62a23c') in 0.006921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Pro Rifle Pack/walk crouching right.fbx
+  artifactKey: Guid(af248e441bb3de64fb0b892fa2ad81d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk crouching right.fbx using Guid(af248e441bb3de64fb0b892fa2ad81d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ce0f43ce6beffb2161d9c9ada5302a') in 0.004990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pro Rifle Pack/walk crouching backward.fbx
+  artifactKey: Guid(a897a94b24c35024ba9bf932bee9ae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk crouching backward.fbx using Guid(a897a94b24c35024ba9bf932bee9ae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0a186c52367e7a1388b6d340801882') in 0.005860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pro Rifle Pack/walk crouching forward right.fbx
+  artifactKey: Guid(c5e6fafcaed021b45966d80e85ccc98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk crouching forward right.fbx using Guid(c5e6fafcaed021b45966d80e85ccc98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f34e1ad022566c592978f13fc03c73') in 0.010466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pro Rifle Pack/sprint forward left.fbx
+  artifactKey: Guid(4814180fca1232c4595008caca5b5225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/sprint forward left.fbx using Guid(4814180fca1232c4595008caca5b5225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07561234c1f56913762696caf40834e7') in 0.005502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Pro Rifle Pack/walk forward right.fbx
+  artifactKey: Guid(6d1e112738d485c4e949762e0e3be309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk forward right.fbx using Guid(6d1e112738d485c4e949762e0e3be309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52f1f1aafec74d2e9fa113eea743833') in 0.005445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pro Rifle Pack/walk forward.fbx
+  artifactKey: Guid(52a3fe5d0fbc60144989866c2b6ecc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk forward.fbx using Guid(52a3fe5d0fbc60144989866c2b6ecc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b623eb30812a36f74ea1906598941d3b') in 0.007095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pro Rifle Pack/walk crouching backward right.fbx
+  artifactKey: Guid(eaf44ad4e33aac24797dc3328e198368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk crouching backward right.fbx using Guid(eaf44ad4e33aac24797dc3328e198368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36052ae33bf720b667dcc1cd921ccf20') in 0.007783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pro Rifle Pack/walk backward left.fbx
+  artifactKey: Guid(285f34d8639b3764a94dc65744cab664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk backward left.fbx using Guid(285f34d8639b3764a94dc65744cab664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3615be98883c47948eb9842189f2b69') in 0.007737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pro Rifle Pack/walk crouching forward left.fbx
+  artifactKey: Guid(c735e8e1e8628984eb1011d0ab55dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/walk crouching forward left.fbx using Guid(c735e8e1e8628984eb1011d0ab55dae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a92852223b311eb36b90e8d9183c2a2') in 0.006830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pro Rifle Pack/sprint left.fbx
+  artifactKey: Guid(764713d961a82e44e8564d75e01eacd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/sprint left.fbx using Guid(764713d961a82e44e8564d75e01eacd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0bde403a8bd2ce57830f6e4da593e3a') in 0.008965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.854235 seconds.
+  path: Assets/Pro Rifle Pack/jump loop.fbx
+  artifactKey: Guid(6e3f486846176024eb5db7094e8b0af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/jump loop.fbx using Guid(6e3f486846176024eb5db7094e8b0af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2a8609fe9770bb562720957d7942a3') in 0.007360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pro Rifle Pack/run forward right.fbx
+  artifactKey: Guid(15bb75331aa72dd458e2390be70af240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/run forward right.fbx using Guid(15bb75331aa72dd458e2390be70af240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334cd312da9cca1727324a046a8cbf9a') in 0.007042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Pro Rifle Pack/run backward right.fbx
+  artifactKey: Guid(3eeea8f5cc589f6489ae8fc6ed9cb4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/run backward right.fbx using Guid(3eeea8f5cc589f6489ae8fc6ed9cb4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c7fafa9b4f357214f668162648ae8a') in 0.010834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Pro Rifle Pack/run forward left.fbx
+  artifactKey: Guid(3468f3179100f1f4b974dee9f73b10de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/run forward left.fbx using Guid(3468f3179100f1f4b974dee9f73b10de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e3efdcf1b21c5b2167a600d2ff2d7f') in 0.009202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pro Rifle Pack/run forward.fbx
+  artifactKey: Guid(452d0107681c93842a8c52408ad2bf02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/run forward.fbx using Guid(452d0107681c93842a8c52408ad2bf02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b5fa361077ab1ccd08c49a29a18058') in 0.009551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.028755 seconds.
+  path: Assets/Pro Rifle Pack/crouching turn 90 right.fbx
+  artifactKey: Guid(b44cd2b4d8c72cf46b9d443f7ebf8866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/crouching turn 90 right.fbx using Guid(b44cd2b4d8c72cf46b9d443f7ebf8866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fecf4a2217d5797e9d5b6248f9d1506') in 0.009627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pro Rifle Pack/idle crouching aiming.fbx
+  artifactKey: Guid(62dcbb64b6fffe34b8b01fe4bf92caee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/idle crouching aiming.fbx using Guid(62dcbb64b6fffe34b8b01fe4bf92caee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1eba9a9da1506a9c8c66997cc997d57') in 0.010864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pro Rifle Pack/idle crouching.fbx
+  artifactKey: Guid(ff67d13074deed841b94a64aeef42386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pro Rifle Pack/idle crouching.fbx using Guid(ff67d13074deed841b94a64aeef42386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72560b5b892ebc0a392dc4f038a614f7') in 0.010582 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

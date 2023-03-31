@@ -3,10 +3,11 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 10f;
-    public int damage = 1;
+    public int damage = 10;
     public float lifespan = 30f;
     private float lifeTimer = 0f;
     public AudioClip shootingSound;
+    public GameObject player;
 
 
     private void Start()
@@ -17,7 +18,11 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         // Move the bullet forward
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        //Vector3 direction = player.transform.position - transform.position;
+        //direction.Normalize();
+
+        // Move the game object in the direction of the target game object
+       // transform.Translate(direction * speed * Time.deltaTime);
 
         // Increment the timer and destroy the bullet when its lifespan is over
         lifeTimer += Time.deltaTime;

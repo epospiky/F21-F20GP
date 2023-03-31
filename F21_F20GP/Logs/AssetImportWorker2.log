@@ -1,0 +1,275 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 32501 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51973
+Successfully changed project path to: C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP
+C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27496] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3839594128 [EditorId] 3839594128 [Version] 1048832 [Id] WindowsEditor(7,ERNEST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27496] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3839594128 [EditorId] 3839594128 [Version] 1048832 [Id] WindowsEditor(7,ERNEST) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 100.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Admin/Desktop/Computer Games Programming/F21F20GP_CW2/F21-F20GP/F21_F20GP/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti with Max-Q Design (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     4020 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56436
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004833 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 99.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Domain Reload Profiling:
+	ReloadAssembly (763ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (538ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (115ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (99ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004876 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Admin\Desktop\Computer Games Programming\F21F20GP_CW2\F21-F20GP\F21_F20GP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Admin\Desktop\Computer Games Programming\F21F20GP_CW2\F21-F20GP\F21_F20GP\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.086 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1087ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (852ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (324ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (353ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3063 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (113.9 KB). Loaded Objects now: 3527.
+Memory consumption went from 109.9 MB to 109.8 MB.
+Total: 3.041600 ms (FindLiveObjects: 0.228600 ms CreateObjectMapping: 0.142500 ms MarkObjects: 2.571200 ms  DeleteObjects: 0.098600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 533543.369113 seconds.
+  path: Assets/FreeMachineGun/vfx/Materials
+  artifactKey: Guid(317acd5530ab8f348b6023409be6c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/vfx/Materials using Guid(317acd5530ab8f348b6023409be6c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb51aeef6627bbff5abdb50b462c138') in 0.013073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.121862 seconds.
+  path: Assets/FreeMachineGun/vfx/Materials/No Name.mat
+  artifactKey: Guid(1e1128cbe6a0d464da3fdf0def004908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/vfx/Materials/No Name.mat using Guid(1e1128cbe6a0d464da3fdf0def004908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee450e0e97b0af19cbe92d969ad3256') in 0.129017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.119723 seconds.
+  path: Assets/FreeMachineGun/FreeMachineGun_scene.unity
+  artifactKey: Guid(8f03dabba55ee8a4b910198302368dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/FreeMachineGun_scene.unity using Guid(8f03dabba55ee8a4b910198302368dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac3a209a9845bdb323c08ef95a1f4ad') in 0.009709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.474823 seconds.
+  path: Assets/FreeMachineGun/documentation.txt
+  artifactKey: Guid(c7286a1c0e03f16498a3ee97574abf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/documentation.txt using Guid(c7286a1c0e03f16498a3ee97574abf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c35ee09a4be1a9d71135a479cad0d3') in 0.015517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.462118 seconds.
+  path: Assets/FreeMachineGun/Materials
+  artifactKey: Guid(bb95f5640caca2749a3e80b3ea8ce7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials using Guid(bb95f5640caca2749a3e80b3ea8ce7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4d69cbe6ca8423883cdb252bf1838f2') in 0.002220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.085465 seconds.
+  path: Assets/FreeMachineGun/Materials/DSN_MachineGun_00.mat
+  artifactKey: Guid(1df7f4bd2ae23da4381e0027c914dfbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/DSN_MachineGun_00.mat using Guid(1df7f4bd2ae23da4381e0027c914dfbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80718195098235bb1001b3bcca13b68b') in 0.031797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/FreeMachineGun/Materials/MachineGun_toon_diffuse_08.mat
+  artifactKey: Guid(467bec879f589dd4ba1ab4492d2f61e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/MachineGun_toon_diffuse_08.mat using Guid(467bec879f589dd4ba1ab4492d2f61e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c028eac53fb31d54456485aaf7b4f0') in 0.021878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/FreeMachineGun/Materials/Toon_MachineGun_10.mat
+  artifactKey: Guid(244ec3b617befcc40a40c82a10bcc5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/Toon_MachineGun_10.mat using Guid(244ec3b617befcc40a40c82a10bcc5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66cc4a5c5998abf75ce71b4dbbb433d5') in 0.022288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/FreeMachineGun/Materials/Toon_MachineGun_05.mat
+  artifactKey: Guid(b9df7cc1836289a479eea5a292ff5fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/Toon_MachineGun_05.mat using Guid(b9df7cc1836289a479eea5a292ff5fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52c7fec3e3bba3e89d0ffa626321ab21') in 0.024119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/FreeMachineGun/Materials/DSN_MachineGun_03.mat
+  artifactKey: Guid(243a7270ae903614798ef331b084d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/DSN_MachineGun_03.mat using Guid(243a7270ae903614798ef331b084d39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47b8825cb67644acf7aa68556a4718c') in 0.022762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/FreeMachineGun/Materials/Toon_MachineGun_09.mat
+  artifactKey: Guid(0af9a241835ac924c994a232ad60a307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/Toon_MachineGun_09.mat using Guid(0af9a241835ac924c994a232ad60a307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7174f5ca53ba9906256b78981ecbe2') in 0.021370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/FreeMachineGun/Materials/Toon_MachineGun_08.mat
+  artifactKey: Guid(b9666236f41956740802d76701f74cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/Toon_MachineGun_08.mat using Guid(b9666236f41956740802d76701f74cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2c9bffaa693904f84c098d0bf5608b') in 0.024457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/FreeMachineGun/Materials/DSN_MachineGun_10.mat
+  artifactKey: Guid(a889d6d84020ace4b8acf4f12ecaeccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/DSN_MachineGun_10.mat using Guid(a889d6d84020ace4b8acf4f12ecaeccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adebd924cc18a3526aa18aafa404dd7c') in 0.027589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/FreeMachineGun/Materials/DSN_MachineGun_08.mat
+  artifactKey: Guid(86aecded5a65c83468bc47c87e690361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/DSN_MachineGun_08.mat using Guid(86aecded5a65c83468bc47c87e690361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed6695c2a4b854faeea689d685dd02c') in 0.029918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/FreeMachineGun/Materials/DSN_MachineGun_06.mat
+  artifactKey: Guid(2201313db4f788a4db28a9c82b22e370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/DSN_MachineGun_06.mat using Guid(2201313db4f788a4db28a9c82b22e370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15103599cde195d28bf198ca099bc658') in 0.024129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/FreeMachineGun/Materials/Toon_MachineGun_03.mat
+  artifactKey: Guid(12d8abd20ef61d945b2433b9e3f0c46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeMachineGun/Materials/Toon_MachineGun_03.mat using Guid(12d8abd20ef61d945b2433b9e3f0c46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a570fcf028c938f067fc9b7fa41d28') in 0.022838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.880326 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(16426c29c0259374ca78d72544e8a1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(16426c29c0259374ca78d72544e8a1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1584ae79c5eb9118c4ef6c3021185d55') in 0.031627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.900134 seconds.
+  path: Assets/Prefabs/Bullets/Pistol Bullet.prefab
+  artifactKey: Guid(91c280018392a424a8304ddff015f2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bullets/Pistol Bullet.prefab using Guid(91c280018392a424a8304ddff015f2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66bd07f3593c05bdad1fdb4586954276') in 0.020985 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
