@@ -4,8 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
-  - Waypoints
+  - Dummie
+  - SecondCamera
+  - BulletSpawn
+  - LevelPart
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -15,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - Bullets
-  - Trigger Zone
+  - 
+  - 
+  - 
   - 
   - 
   - 

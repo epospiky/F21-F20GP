@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Player_Cont : MonoBehaviour
 {
-    public static Player_Cont instance;
     public float movSpeed, gravityModifier, jumpPower, runSpeed = 12f;
     public CharacterController charCon;
     private Vector3 movInput;
@@ -22,19 +20,10 @@ public class Player_Cont : MonoBehaviour
 
     public Gun activeGun;
     public List<Gun> allGuns = new List<Gun>();
-    public List<Gun> pickupGun = new List<Gun>();   
     public int currentGun;
-    
-
-    public void Awake()
-    {
-        instance = this;
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        UIController.instance.ammoText.text = "AMM0: " + activeGun.currentAmmo;
         currentGun--;
         SwitchGun();
     }
@@ -150,7 +139,6 @@ public class Player_Cont : MonoBehaviour
             activeGun.currentAmmo--;
             Instantiate(activeGun.bullet, firepoint.position, firepoint.rotation);
             activeGun.fireCounter = activeGun.fireRate;
-            UIController.instance.ammoText.text = "AMM0: " + activeGun.currentAmmo;
         }
         
     }
@@ -169,30 +157,5 @@ public class Player_Cont : MonoBehaviour
         activeGun.gameObject.SetActive(true);
 
         firepoint.position = activeGun.firepoint.position;
-    }
-
-    public void addGun(string addGun)
-    {
-        bool gunLocked = false;
-
-        if(pickupGun.Count > 0) 
-        {
-            for(int i = 0; i < pickupGun.Count; i++) 
-            {
-                if (pickupGun[i].gunName == addGun)
-                {
-                    gunLocked = true;
-                    allGuns.Add(pickupGun[i]);  
-                    pickupGun.RemoveAt(i);
-                    i = pickupGun.Count;
-                }
-            }
-
-        }
-        if(gunLocked) 
-        {
-            currentGun = allGuns.Count - 1;
-            SwitchGun();
-        }
     }
 }
