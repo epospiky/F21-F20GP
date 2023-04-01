@@ -1,101 +1,95 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    public Transform player;
+    public float chaseDistance = 10f;
+    public float shootDistance = 5f;
+    public float moveSpeed = 5f;
+    public float rotateSpeed = 5f;
+    public int bulletDamage = 1;
+    public float bulletSpeed = 10f;
+    public GameObject bulletPrefab;
+    public Transform bulletSpawnPoint;
+    public ParticleSystem bulletParticles;
+    public float particleDuration = 1f;
+    public float particleDelay = 0.1f;
+    public float shotCooldown = 0.5f;
 
-    
-    private bool chasing;
-    public float distanceToChase = 10f, distanceToLose = 15f, distanceToStop = 5f;
-    private Vector3 targetPoint, startpoint ;
-    public NavMeshAgent agent;
-    public float keepChasingTime = 5f;
-    private float chaseCounter;
-    public GameObject bullet;
-    public Transform firePoint;
-    public float fireRate, waitBetweenShots = 2f, timeToShoot =1f;
-    private float fireCount, shotWaitCounter, shootTimeCounter;
+    public Transform[] waypoints;
+    private int currentWaypoint = 0;
+    private UnityEngine.AI.NavMeshAgent navMeshAgent;
+
+    private float timeSinceLastShot;
 
     // Start is called before the first frame update
     void Start()
     {
-        startpoint = transform.position;
-        shootTimeCounter = timeToShoot;
-        shotWaitCounter = waitBetweenShots;
+        navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        navMeshAgent.SetDestination(waypoints[0].position);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        targetPoint = Player_Cont.instance.transform.position;
-        targetPoint.y = transform.position.y;
-        if (!chasing)
-        {
-            if (Vector3.Distance(transform.position, targetPoint) < distanceToChase)
-            {
-                chasing = true;
-                shootTimeCounter = timeToShoot;
-                shotWaitCounter = waitBetweenShots;
-            }
+        if(player == null) { return; }
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-            if (chaseCounter > 0)
+        if (distanceToPlayer <= chaseDistance)
+        {
+            navMeshAgent.SetDestination(player.position);
+
+            if (distanceToPlayer <= shootDistance)
             {
-                chaseCounter -= Time.deltaTime;
-                if (chaseCounter <= 0)
-                {
-                    agent.destination = startpoint;
-                }
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), rotateSpeed * Time.deltaTime);
+                timeSinceLastShot += Time.deltaTime;
+                Shoot();
             }
         }
         else
         {
-         if (Vector3.Distance(transform.position, targetPoint) > distanceToStop)
-            {
-                agent.destination = targetPoint;
-            }
-         else
+            Patrol();
+        }
+    }
 
-            {
-                agent.destination = transform.position;
-            }
-           
-           
-            
-            if (Vector3.Distance(transform.position,targetPoint) > distanceToLose) 
-            {
-                chasing=false;
-                chaseCounter = keepChasingTime;
-            }
+    void Patrol()
+    {
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance && !navMeshAgent.pathPending)
+        {
+            currentWaypoint = (currentWaypoint + 1) % waypoints.Length;
+            navMeshAgent.SetDestination(waypoints[currentWaypoint].position);
+        }
+    }
 
-            if (shotWaitCounter > 0)
+    void Shoot()
+    {
+        if (timeSinceLastShot < shotCooldown)
+        {
+            return;
+        }
+
+        timeSinceLastShot = .35f;
+        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
+        bullet.GetComponent<Bullet>().damage = bulletDamage;
+        bulletParticles.Play();
+        Invoke("StopParticleEffect", particleDuration);
+    }
+
+    void StopParticleEffect()
+    {
+        bulletParticles.Stop();
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            PlayerController playerController = other.GetComponent<PlayerController>();
+
+            if (playerController != null)
             {
-                shotWaitCounter -= Time.deltaTime;
-                if(shotWaitCounter <= 0)
-                {
-                    shootTimeCounter = timeToShoot;
-                }
-            }
-            else
-            {
-                shootTimeCounter -= Time.deltaTime;
-
-                if (shootTimeCounter > 0)
-                {
-                    fireCount -= Time.deltaTime;
-
-                    if (fireCount <= 0)
-                    {
-                        fireCount = fireRate;
-                        Instantiate(bullet, firePoint.position, firePoint.rotation);
-
-                    }
-                }
-                else
-                {
-                    shotWaitCounter = waitBetweenShots;
-                }
+                playerController.TakeDamage(bulletDamage);
             }
         }
     }
