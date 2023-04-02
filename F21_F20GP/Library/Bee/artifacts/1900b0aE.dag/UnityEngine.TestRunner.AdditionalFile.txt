@@ -1,6 +1,1 @@
-<<<<<<< Updated upstream
-
-C:\Users\Admin\Desktop\New work\F21-F20GP-main\F21-F20GP\F21_F20GP
-=======
 D:\enam games\Shen's Project\F21-F20GP\F21_F20GP
->>>>>>> Stashed changes

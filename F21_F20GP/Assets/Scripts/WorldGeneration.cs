@@ -71,7 +71,7 @@ public class WorldGeneration : MonoBehaviour
                 if (world[y,z] > 0)
                 {
                     validSpawns.Add(new Vector3(y * 2, 1.0f, z * 2));
-                    validSpawnsForWolfPrefab.Add(new Vector3(y * 1, 1.0f, z * 2));
+                    validSpawnsForWolfPrefab.Add(new Vector3(y * 2.1f, 1.0f, z * 2));
 
                 }
             }
