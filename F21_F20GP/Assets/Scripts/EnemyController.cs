@@ -19,6 +19,8 @@ public class EnemyController : MonoBehaviour
     private float fireCount, shotWaitCounter, shootTimeCounter;
     private bool wasShot;
     public Animator WolfAnimator;
+    public int damage;
+
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,7 @@ public class EnemyController : MonoBehaviour
         {
             if(WolfAnimator != null)
             {
-                distanceToStop = 1.73f;
+                distanceToStop = 0.0f;
             
             }
 
@@ -145,5 +147,17 @@ public class EnemyController : MonoBehaviour
         wasShot = true;
         chasing = true; 
        
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        PlayerHealth.instance.DamagePlayer(damage);
+
+    }
+    
+    void OnTriggerStay(Collider other)
+    {
+        PlayerHealth.instance.DamagePlayer(damage);
+
     }
 }
