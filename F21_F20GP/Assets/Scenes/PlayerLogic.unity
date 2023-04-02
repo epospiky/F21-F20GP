@@ -438,17 +438,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54fabe380ae6d2f40846401e31e414e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 100
+  size: 200
   minRoomSize: 10
-  maxRoomSize: 20
-  NumberOfRooms: 5
-  numberOfSpawn1: 5
-  numberOfWolfPreFabSpawn: 5
+  maxRoomSize: 30
+  NumberOfRooms: 10
+  numberOfSpawn1: 20
+  numberOfWolfPreFabSpawn: 10
   spawn1: {fileID: 4964995335876102022, guid: 0b907cd98bc0b5745a1c386f4b442811, type: 3}
   WolfEnemyPrefabSpawn: {fileID: 1811715708561768, guid: b6bc442002739164d915094800ad8fe1, type: 3}
   Player: {fileID: 8477673907284028726, guid: fcff5908c2a8a5a4b82adc5940df237a, type: 3}
   validSpawns: []
-  validSpawnsForWolfPrefab: []
   surface: {fileID: 703450401}
 --- !u!1 &482141610
 GameObject:

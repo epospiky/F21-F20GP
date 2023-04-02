@@ -22,11 +22,9 @@ public class WorldGeneration : MonoBehaviour
 
     public List<(int,int)> points = new List<(int, int)>();
     public List<Vector3> validSpawns = new List<Vector3>();
-    public List<Vector3> validSpawnsForWolfPrefab = new List<Vector3>();
 
 
     public NavMeshSurface surface;
-
 
     // Start is called before the first frame update
     void Start()
@@ -44,10 +42,6 @@ public class WorldGeneration : MonoBehaviour
         findValidSpawns(world);
         spawnEnemies();
 
-
-        int spawnPoint = Random.Range(0, validSpawns.Count - 1);
-        Instantiate(Player, validSpawns[spawnPoint], Quaternion.identity);
-        validSpawns.RemoveAt(spawnPoint);
     }
 
     private void spawnEnemies()
@@ -56,7 +50,14 @@ public class WorldGeneration : MonoBehaviour
         {
             int spawnPoint = Random.Range(0, validSpawns.Count-1);
             Instantiate(spawn1, validSpawns[spawnPoint], Quaternion.identity);
-            Instantiate(WolfEnemyPrefabSpawn, validSpawnsForWolfPrefab[spawnPoint], Quaternion.identity);
+            
+
+            validSpawns.RemoveAt(spawnPoint);
+        }
+        for (int y = 0; y < numberOfWolfPreFabSpawn; y++)
+        {
+            int spawnPoint = Random.Range(0, validSpawns.Count - 1);
+            Instantiate(WolfEnemyPrefabSpawn, validSpawns[spawnPoint], Quaternion.identity);
 
             validSpawns.RemoveAt(spawnPoint);
         }
@@ -64,15 +65,27 @@ public class WorldGeneration : MonoBehaviour
 
     private void findValidSpawns(int[,] world)
     {
+        int playerSpawnRoom = 0;
+        bool found = false;
         for (int y = 1; y < (size - 1); y++)
         {
             for (int z = 1; z < (size - 1); z++)
             {
                 if (world[y,z] > 0)
                 {
-                    validSpawns.Add(new Vector3(y * 2, 1.5f, z * 2));
-                    validSpawnsForWolfPrefab.Add(new Vector3(y * 2.1f, 1.5f, z * 2));
-
+                    if (!found) 
+                    {
+                        playerSpawnRoom = world[y,z];
+                        Instantiate(Player, new Vector3(y * 2, 1.5f, z * 2), Quaternion.identity);
+                        found = true;
+                    }
+                    else
+                    {
+                        if (world[y, z] != playerSpawnRoom)
+                        {
+                            validSpawns.Add(new Vector3(y * 2, 1.5f, z * 2));
+                        }
+                    }
                 }
             }
         }
