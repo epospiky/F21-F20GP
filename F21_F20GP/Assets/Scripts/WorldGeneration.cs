@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.AI;
@@ -17,14 +18,14 @@ public class WorldGeneration : MonoBehaviour
 
     public GameObject spawn1;
     public GameObject WolfEnemyPrefabSpawn;
-
     public GameObject Player;
+    public GameObject wall;
 
     public List<(int,int)> points = new List<(int, int)>();
     public List<Vector3> validSpawns = new List<Vector3>();
 
-
-    public NavMeshSurface surface;
+    //public List<NavMeshSurface> surfaces = new List<NavMeshSurface>();
+    public NavMeshSurface navmesh;
 
     // Start is called before the first frame update
     void Start()
@@ -37,8 +38,9 @@ public class WorldGeneration : MonoBehaviour
         world = findWalls(world);
         printArray(world);
         placeWalls(world);
+        //placeFloors(world);
 
-        surface.BuildNavMesh();
+        navmesh.BuildNavMesh();
         findValidSpawns(world);
         spawnEnemies();
 
@@ -76,14 +78,14 @@ public class WorldGeneration : MonoBehaviour
                     if (!found) 
                     {
                         playerSpawnRoom = world[y,z];
-                        Instantiate(Player, new Vector3(y * 2, 1.5f, z * 2), Quaternion.identity);
+                        Instantiate(Player, new Vector3(y * 2, 3f, z * 2), Quaternion.identity);
                         found = true;
                     }
                     else
                     {
                         if (world[y, z] != playerSpawnRoom)
                         {
-                            validSpawns.Add(new Vector3(y * 2, 1.5f, z * 2));
+                            validSpawns.Add(new Vector3(y * 2, 1f, z * 2));
                         }
                     }
                 }
@@ -279,7 +281,7 @@ public class WorldGeneration : MonoBehaviour
                 {
                     GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                     cube.transform.localScale = new Vector3(2, 2, 2);
-                    cube.transform.position = new Vector3(y*2, 2, z*2);
+                    cube.transform.position = new Vector3(y*2, 1, z*2);
                     cube.AddComponent<BoxCollider>();
                 }
             }
