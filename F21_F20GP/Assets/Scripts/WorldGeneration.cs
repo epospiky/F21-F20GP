@@ -13,12 +13,17 @@ public class WorldGeneration : MonoBehaviour
     public int NumberOfRooms = 5;
 
     public int numberOfSpawn1 = 5;
+    public int numberOfWolfPreFabSpawn = 5;
+
     public GameObject spawn1;
+    public GameObject WolfEnemyPrefabSpawn;
 
     public GameObject Player;
 
     public List<(int,int)> points = new List<(int, int)>();
     public List<Vector3> validSpawns = new List<Vector3>();
+    public List<Vector3> validSpawnsForWolfPrefab = new List<Vector3>();
+
 
     public NavMeshSurface surface;
 
@@ -51,6 +56,8 @@ public class WorldGeneration : MonoBehaviour
         {
             int spawnPoint = Random.Range(0, validSpawns.Count-1);
             Instantiate(spawn1, validSpawns[spawnPoint], Quaternion.identity);
+            Instantiate(WolfEnemyPrefabSpawn, validSpawnsForWolfPrefab[spawnPoint], Quaternion.identity);
+
             validSpawns.RemoveAt(spawnPoint);
         }
     }
@@ -64,6 +71,8 @@ public class WorldGeneration : MonoBehaviour
                 if (world[y,z] > 0)
                 {
                     validSpawns.Add(new Vector3(y * 2, 1.0f, z * 2));
+                    validSpawnsForWolfPrefab.Add(new Vector3(y * 1, 1.0f, z * 2));
+
                 }
             }
         }

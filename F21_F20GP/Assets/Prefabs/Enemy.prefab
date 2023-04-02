@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944549778bcf2e64c9806ee73f56b18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curentHealth: 5
+  currentHealth: 5
   eC: {fileID: 4964995335876102017}
 --- !u!114 &4964995335876102017
 MonoBehaviour:
@@ -253,6 +253,7 @@ MonoBehaviour:
   fireRate: 0.3
   waitBetweenShots: 2
   timeToShoot: 1
+  WolfAnimator: {fileID: 0}
 --- !u!195 &4964995335876102030
 NavMeshAgent:
   m_ObjectHideFlags: 0
