@@ -49,12 +49,10 @@ public class Enemy_Cont : MonoBehaviour
     {
         if (!player.activeSelf)
         {
+            Destroy(player);
             SceneManager.LoadScene("GameoverScreen");
         }
     }
 
-   public void RestartGame()
-    {
-            SceneManager.LoadScene("PlayerLogic");   
-    }
+
 }

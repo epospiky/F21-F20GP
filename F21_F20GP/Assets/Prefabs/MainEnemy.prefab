@@ -151,7 +151,6 @@ GameObject:
   - component: {fileID: 6101622163753535142}
   - component: {fileID: 6101622163753535143}
   - component: {fileID: 1485978974}
-  - component: {fileID: 2048972746}
   m_Layer: 0
   m_Name: MainEnemy
   m_TagString: Enemy
@@ -251,7 +250,6 @@ MonoBehaviour:
   anim: {fileID: 6101622162936879248}
   player: {fileID: 0}
   GameOverSceen: {fileID: 0}
-  enemyHealth: {fileID: 0}
 --- !u!114 &1485978974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,27 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944549778bcf2e64c9806ee73f56b18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 5
-  eC: {fileID: 0}
---- !u!114 &2048972746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6101622162929593058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e14f071a51a164da9b9c4be1989143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemeyHP: 100
-  projectile: {fileID: 5019855844721665169, guid: d7c6abe4d9f013440a820222127ea062, type: 3}
-  projectilePoint: {fileID: 6101622164781662893}
-  anim: {fileID: 0}
-  player: {fileID: 0}
-  GameOverSceen: {fileID: 0}
-  enemyHealth: {fileID: 0}
+  curentHealth: 5
 --- !u!1 &6101622162929593072
 GameObject:
   m_ObjectHideFlags: 0
