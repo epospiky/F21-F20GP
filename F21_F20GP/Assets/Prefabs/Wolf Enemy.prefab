@@ -1579,8 +1579,8 @@ MonoBehaviour:
   bullet: {fileID: 0}
   firePoint: {fileID: 0}
   fireRate: 0
-  waitBetweenShots: 2
-  timeToShoot: 1
+  waitBetweenShots: 0
+  timeToShoot: 0
   WolfAnimator: {fileID: 95605706055870404}
   damage: 2
 --- !u!114 &7303574328654804415
