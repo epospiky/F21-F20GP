@@ -1464,6 +1464,8 @@ GameObject:
   - component: {fileID: -6742060532299996197}
   - component: {fileID: 5126434573435460775}
   - component: {fileID: 4951724278231937242}
+  - component: {fileID: 7303574328654804415}
+  - component: {fileID: -1608428256154765617}
   m_Layer: 0
   m_Name: Wolf Enemy
   m_TagString: Enemy
@@ -1552,11 +1554,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811715708561768}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.51, z: 0}
+  m_Size: {x: 0.64, y: 0.39, z: 1.4940641}
+  m_Center: {x: 0, y: 0.51, z: 0.24703231}
 --- !u!114 &4951724278231937242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,6 +1582,33 @@ MonoBehaviour:
   waitBetweenShots: 2
   timeToShoot: 1
   WolfAnimator: {fileID: 95605706055870404}
+  damage: 2
+--- !u!114 &7303574328654804415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811715708561768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944549778bcf2e64c9806ee73f56b18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 5
+  eC: {fileID: 4951724278231937242}
+--- !u!114 &-1608428256154765617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811715708561768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f708f04df19c64db29f340dcc0dc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1817945666988552
 GameObject:
   m_ObjectHideFlags: 0

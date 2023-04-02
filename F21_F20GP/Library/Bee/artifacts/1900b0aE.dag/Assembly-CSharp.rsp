@@ -370,6 +370,7 @@
 "Assets/Scripts/RestartButton.cs"
 "Assets/Scripts/UIController.cs"
 "Assets/Scripts/WorldGeneration.cs"
+"Assets/WolfAttack.cs"
 -langversion:9.0
 
 /deterministic
