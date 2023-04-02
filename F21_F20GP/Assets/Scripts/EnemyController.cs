@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour
     public float fireRate, waitBetweenShots = 2f, timeToShoot =1f;
     private float fireCount, shotWaitCounter, shootTimeCounter;
     private bool wasShot;
+    public Animator WolfAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +35,16 @@ public class EnemyController : MonoBehaviour
         targetPoint.y = transform.position.y;
         if (!chasing)
         {
+            
+
             if (Vector3.Distance(transform.position, targetPoint) < distanceToChase)
             {
+                // Wolf run animation start
+                if (WolfAnimator != null)
+                {
+                    WolfAnimator.Play("Run Forward WO Root");
+                }
+
                 chasing = true;
                 shootTimeCounter = timeToShoot;
                 shotWaitCounter = waitBetweenShots;
@@ -52,13 +61,25 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-         if (Vector3.Distance(transform.position, targetPoint) > distanceToStop)
+            if(WolfAnimator != null)
+            {
+                distanceToStop = 1.73f;
+            
+            }
+
+            if (Vector3.Distance(transform.position, targetPoint) > distanceToStop)
             {
                 agent.destination = targetPoint;
             }
          else
 
             {
+                // Wolf run animation start
+                /*if (WolfAnimator != null)
+                {
+                    WolfAnimator.Play("Run Forward WO Root");
+                }*/
+
                 agent.destination = transform.position;
             }
            
@@ -88,6 +109,8 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
+               
+
                 shootTimeCounter -= Time.deltaTime;
 
                 if (shootTimeCounter > 0)
@@ -97,7 +120,15 @@ public class EnemyController : MonoBehaviour
                     if (fireCount <= 0)
                     {
                         fireCount = fireRate;
-                        Instantiate(bullet, firePoint.position, firePoint.rotation);
+                        // Wolf attack animation start
+                        if (WolfAnimator != null)
+                        {
+                            WolfAnimator.Play("Bite Attack");
+                        }
+                        if (firePoint != null)
+                        { 
+                            Instantiate(bullet, firePoint.position, firePoint.rotation);
+                        }
 
                     }
                 }
