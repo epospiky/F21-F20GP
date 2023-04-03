@@ -42,16 +42,28 @@ public class EnemyController : MonoBehaviour
             if (Vector3.Distance(transform.position, targetPoint) < distanceToChase)
             {
                 // Wolf run animation start
-                if (WolfAnimator != null)
-                {
-                    WolfAnimator.Play("Run Forward WO Root");
-                }
+                // if (WolfAnimator != null)
+                // {
+                //     WolfAnimator.Play("Run Forward WO Root");
+                // }
 
                 chasing = true;
                 shootTimeCounter = timeToShoot;
                 shotWaitCounter = waitBetweenShots;
             }
 
+            if (Vector3.Distance(transform.position, targetPoint) < distanceToChase)
+            {
+                // Wolf run animation start
+                if (WolfAnimator != null)
+                {
+                    WolfAnimator.Play("Run Forward WO Root");
+                }
+
+                chasing = true;
+                // shootTimeCounter = timeToShoot;
+                // shotWaitCounter = waitBetweenShots;
+            }
             if (chaseCounter > 0)
             {
                 chaseCounter -= Time.deltaTime;
