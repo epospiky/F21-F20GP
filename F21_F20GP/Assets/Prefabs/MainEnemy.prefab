@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 6101622163753535142}
   - component: {fileID: 6101622163753535143}
   - component: {fileID: 1485978974}
+  - component: {fileID: 5731838738916749629}
   m_Layer: 0
   m_Name: MainEnemy
   m_TagString: Enemy
@@ -207,9 +208,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 2.8918862
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.9459431, z: 0}
 --- !u!195 &6101622163753535142
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -239,7 +240,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6101622162929593058}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7e14f071a51a164da9b9c4be1989143, type: 3}
   m_Name: 
@@ -248,8 +249,8 @@ MonoBehaviour:
   projectile: {fileID: 5019855844721665169, guid: d7c6abe4d9f013440a820222127ea062, type: 3}
   projectilePoint: {fileID: 6101622164781662893}
   anim: {fileID: 6101622162936879248}
-  player: {fileID: 0}
-  GameOverSceen: {fileID: 0}
+  player: {fileID: 8477673907284028726, guid: fcff5908c2a8a5a4b82adc5940df237a, type: 3}
+  enemyHealth: {fileID: 1485978974}
 --- !u!114 &1485978974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +263,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944549778bcf2e64c9806ee73f56b18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curentHealth: 5
+  currentHealth: 5
+  eC: {fileID: 5731838738916749629}
+--- !u!114 &5731838738916749629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6101622162929593058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b39182693c82b44bfcc2536c43391e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToChase: 10
+  distanceToLose: 15
+  distanceToStop: 5
+  agent: {fileID: 0}
+  keepChasingTime: 5
+  bullet: {fileID: 0}
+  firePoint: {fileID: 0}
+  fireRate: 0
+  waitBetweenShots: 2
+  timeToShoot: 1
+  WolfAnimator: {fileID: 0}
+  damage: 0
 --- !u!1 &6101622162929593072
 GameObject:
   m_ObjectHideFlags: 0
