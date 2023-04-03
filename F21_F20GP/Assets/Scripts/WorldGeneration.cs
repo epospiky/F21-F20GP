@@ -279,10 +279,10 @@ public class WorldGeneration : MonoBehaviour
             {
                 if (rooms[y,z] == -1 | y == 0 | z == 0 | y == (size - 1) | z == (size - 1))
                 {
-                    GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    cube.transform.localScale = new Vector3(2, 2, 2);
-                    cube.transform.position = new Vector3(y*2, 1, z*2);
-                    cube.AddComponent<BoxCollider>();
+                    GameObject cube = Instantiate(wall, new Vector3(y * 2, 7f, z * 2), Quaternion.identity);
+                    //cube.transform.localScale = new Vector3(2, 2, 2);
+                    //cube.transform.position = new Vector3(y*2, 1, z*2);
+                    //cube.AddComponent<BoxCollider>();
                 }
             }
         }
