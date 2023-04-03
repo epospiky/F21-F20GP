@@ -15,9 +15,11 @@ public class WorldGeneration : MonoBehaviour
     public int NumberOfRooms = 5;
 
     public int numberOfSpawn1 = 5;
-    public int numberOfWolfPreFabSpawn = 5;
+    public int numberOfSpawn2 = 5;
+    public int numberOfWolfPreFabSpawn = 0;
 
     public GameObject spawn1;
+    public GameObject spawn2;
     public GameObject WolfEnemyPrefabSpawn;
     public GameObject Player;
     public GameObject wall;
@@ -72,6 +74,14 @@ public class WorldGeneration : MonoBehaviour
             Agents.Add(agent);
             validSpawns.RemoveAt(spawnPoint);
         }
+        for (int z = 0; z < numberOfSpawn2; z++)
+        {
+            int spawnPoint = Random.Range(0, validSpawns.Count - 1);
+            GameObject agent = Instantiate(spawn2, validSpawns[spawnPoint], Quaternion.identity);
+            Agents.Add(agent);
+            validSpawns.RemoveAt(spawnPoint);
+        }
+
     }
 
     private void findValidSpawns(int[,] world)

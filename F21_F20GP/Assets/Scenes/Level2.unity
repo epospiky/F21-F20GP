@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: f86724f27adca0841ae59caeae4ba9f1, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -250,8 +250,10 @@ MonoBehaviour:
   maxRoomSize: 40
   NumberOfRooms: 12
   numberOfSpawn1: 30
-  numberOfWolfPreFabSpawn: 10
+  numberOfSpawn2: 8
+  numberOfWolfPreFabSpawn: 0
   spawn1: {fileID: 6101622162929593058, guid: 77b50670418b68e4286d546aec927900, type: 3}
+  spawn2: {fileID: 5621774655418200376, guid: 6467a2a7f91a27645b57e9b7d32eb8e7, type: 3}
   WolfEnemyPrefabSpawn: {fileID: 1811715708561768, guid: b6bc442002739164d915094800ad8fe1, type: 3}
   Player: {fileID: 8477673907284028726, guid: fcff5908c2a8a5a4b82adc5940df237a, type: 3}
   wall: {fileID: 3661700131012801945, guid: 8818fb0f4c4807c4d8855712f512d131, type: 3}
