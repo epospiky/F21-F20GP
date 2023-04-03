@@ -363,11 +363,10 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/IdleState.cs"
-<<<<<<< HEAD
-"Assets/Scripts/MainMenu.cs"
-=======
 "Assets/Scripts/Level1Check.cs"
->>>>>>> main
+"Assets/Scripts/Level2Check.cs"
+"Assets/Scripts/Level3Check.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PatrolState.cs"
 "Assets/Scripts/Pickups/WeaponPickups.cs"
 "Assets/Scripts/PlayerDamage.cs"

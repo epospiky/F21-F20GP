@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -463,11 +463,15 @@ MonoBehaviour:
   maxRoomSize: 20
   NumberOfRooms: 5
   numberOfSpawn1: 5
+  numberOfWolfPreFabSpawn: 5
   spawn1: {fileID: 4964995335876102022, guid: 0b907cd98bc0b5745a1c386f4b442811, type: 3}
   WolfEnemyPrefabSpawn: {fileID: 1811715708561768, guid: b6bc442002739164d915094800ad8fe1, type: 3}
   Player: {fileID: 8477673907284028726, guid: fcff5908c2a8a5a4b82adc5940df237a, type: 3}
+  wall: {fileID: 0}
+  Agents: []
+  totalAgents: 0
   validSpawns: []
-  surface: {fileID: 1294496933}
+  navmesh: {fileID: 0}
 --- !u!4 &1870103580
 Transform:
   m_ObjectHideFlags: 0

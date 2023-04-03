@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 459492731}
   - component: {fileID: 459492732}
+  - component: {fileID: 459492733}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -258,6 +259,19 @@ MonoBehaviour:
   totalAgents: 0
   validSpawns: []
   navmesh: {fileID: 1471071203}
+--- !u!114 &459492733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459492730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c360357bbbeb2b4f96d5933199cc937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gen: {fileID: 459492732}
 --- !u!1 &482141610
 GameObject:
   m_ObjectHideFlags: 0
