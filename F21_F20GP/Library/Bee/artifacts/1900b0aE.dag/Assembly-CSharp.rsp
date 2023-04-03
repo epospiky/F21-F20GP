@@ -363,6 +363,7 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/IdleState.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/PatrolState.cs"
 "Assets/Scripts/Pickups/WeaponPickups.cs"
 "Assets/Scripts/PlayerDamage.cs"
