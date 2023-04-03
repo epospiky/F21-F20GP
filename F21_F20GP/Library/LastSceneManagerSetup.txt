@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/VictoryScene.unity
+=======
 - path: Assets/Scenes/PlayerLogic.unity
+>>>>>>> main
   isLoaded: 1
   isActive: 1
   isSubScene: 0
