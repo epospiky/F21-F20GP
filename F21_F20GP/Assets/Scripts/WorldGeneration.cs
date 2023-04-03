@@ -6,6 +6,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.AI;
 
+
 public class WorldGeneration : MonoBehaviour
 {
     public int size = 100;
@@ -20,6 +21,9 @@ public class WorldGeneration : MonoBehaviour
     public GameObject WolfEnemyPrefabSpawn;
     public GameObject Player;
     public GameObject wall;
+
+    public List<GameObject> Agents = new List<GameObject>();
+    public int totalAgents;
 
     public List<(int,int)> points = new List<(int, int)>();
     public List<Vector3> validSpawns = new List<Vector3>();
@@ -43,7 +47,13 @@ public class WorldGeneration : MonoBehaviour
         navmesh.BuildNavMesh();
         findValidSpawns(world);
         spawnEnemies();
+        totalAgents = Agents.Count;
 
+    }
+
+    public int returnTotalAgents()
+    {
+        return totalAgents;
     }
 
     private void spawnEnemies()
@@ -51,16 +61,15 @@ public class WorldGeneration : MonoBehaviour
         for(int x = 0; x < numberOfSpawn1; x++)
         {
             int spawnPoint = Random.Range(0, validSpawns.Count-1);
-            Instantiate(spawn1, validSpawns[spawnPoint], Quaternion.identity);
-            
-
+            GameObject agent = Instantiate(spawn1, validSpawns[spawnPoint], Quaternion.identity);
+            Agents.Add(agent);
             validSpawns.RemoveAt(spawnPoint);
         }
         for (int y = 0; y < numberOfWolfPreFabSpawn; y++)
         {
             int spawnPoint = Random.Range(0, validSpawns.Count - 1);
-            Instantiate(WolfEnemyPrefabSpawn, validSpawns[spawnPoint], Quaternion.identity);
-
+            GameObject agent = Instantiate(WolfEnemyPrefabSpawn, validSpawns[spawnPoint], Quaternion.identity);
+            Agents.Add(agent);
             validSpawns.RemoveAt(spawnPoint);
         }
     }
@@ -96,7 +105,16 @@ public class WorldGeneration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        foreach(GameObject agent in Agents)
+        {
+            if(agent == null)
+            {
+                Agents.Remove(agent);
+                totalAgents--;
+            }
+        }
+
+        Debug.Log(totalAgents);
     }
 
     
