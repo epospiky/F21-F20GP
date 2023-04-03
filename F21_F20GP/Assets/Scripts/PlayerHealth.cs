@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -39,8 +38,6 @@ public class PlayerHealth : MonoBehaviour
             if (currentHealth <= 0)
             {
                 gameObject.SetActive(false);
-                Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene("GameoverScreen");
             }
 
             iCounter = iFrames;

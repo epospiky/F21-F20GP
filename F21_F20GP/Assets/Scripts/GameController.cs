@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(sceneName: "PlayerLogic");
+        SceneManager.LoadScene(sceneName: "MainGame");
 
     }
     public void QuitGame()

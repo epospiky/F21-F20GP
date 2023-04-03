@@ -7,6 +7,6 @@ public class RestartButton : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("PlayerLogic");
+        SceneManager.LoadScene("MainGame");
     }
 }
