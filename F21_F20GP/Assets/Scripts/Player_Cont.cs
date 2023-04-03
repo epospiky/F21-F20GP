@@ -24,7 +24,8 @@ public class Player_Cont : MonoBehaviour
     public List<Gun> allGuns = new List<Gun>();
     public List<Gun> pickupGun = new List<Gun>();   
     public int currentGun;
-    
+
+    public AudioSource shotSound;
 
     public void Awake()
     {
@@ -34,6 +35,7 @@ public class Player_Cont : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         UIController.instance.ammoText.text = "AMM0: " + activeGun.currentAmmo;
         currentGun--;
         SwitchGun();

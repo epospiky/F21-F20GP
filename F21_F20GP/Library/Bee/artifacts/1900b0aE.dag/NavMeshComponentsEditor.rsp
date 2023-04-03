@@ -338,12 +338,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/NavMeshComponents/Editor/NavMeshAssetManager.cs"
-"Assets/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs"
-"Assets/NavMeshComponents/Editor/NavMeshLinkEditor.cs"
-"Assets/NavMeshComponents/Editor/NavMeshModifierEditor.cs"
-"Assets/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs"
-"Assets/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs"
+"Assets/Sounds/NavMeshComponents/Editor/NavMeshAssetManager.cs"
+"Assets/Sounds/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs"
+"Assets/Sounds/NavMeshComponents/Editor/NavMeshLinkEditor.cs"
+"Assets/Sounds/NavMeshComponents/Editor/NavMeshModifierEditor.cs"
+"Assets/Sounds/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs"
+"Assets/Sounds/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs"
 -langversion:9.0
 
 /deterministic

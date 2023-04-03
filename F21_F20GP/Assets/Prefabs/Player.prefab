@@ -254,6 +254,7 @@ MonoBehaviour:
   pickupGun:
   - {fileID: 8477673908373837906}
   currentGun: 0
+  shotSound: {fileID: 0}
 --- !u!95 &8477673907284028722
 Animator:
   serializedVersion: 5
@@ -738,7 +739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6760638794448481629, guid: e15c9c819aeba1b41bb704617b982b78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6760638794448481629, guid: e15c9c819aeba1b41bb704617b982b78, type: 3}
       propertyPath: m_LocalPosition.z
