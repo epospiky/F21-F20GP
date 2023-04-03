@@ -1557,8 +1557,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.39, z: 1.4940641}
-  m_Center: {x: 0, y: 0.51, z: 0.24703231}
+  m_Size: {x: 0.31262136, y: 0.810139, z: 1.4940641}
+  m_Center: {x: 0.19411987, y: 0.45635507, z: 0.24703228}
 --- !u!114 &4951724278231937242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,8 +1579,8 @@ MonoBehaviour:
   bullet: {fileID: 0}
   firePoint: {fileID: 0}
   fireRate: 0
-  waitBetweenShots: 2
-  timeToShoot: 1
+  waitBetweenShots: 0
+  timeToShoot: 0
   WolfAnimator: {fileID: 95605706055870404}
   damage: 2
 --- !u!114 &7303574328654804415
